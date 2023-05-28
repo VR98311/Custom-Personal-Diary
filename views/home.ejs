@@ -6,9 +6,9 @@
 <p><%= newPosts[i].newPost %></p>
 <% } %> -->
 <%  newPosts.forEach(i =>{ %>
-    <h1><%= i.newTitle %></h1>
-    <p><%= i.newPost.substring(0,100) + "..." %>
-    <a href="/post/<%= i.newTitle %>">read more</a></p>
+    <h1><%= i.contentTitle %></h1>
+    <p><%= i.contentBody.substring(0,100) + "..." %>
+    <a href="/post/<%= i.contentTitle %>">read more</a></p>
     <% }); %>
 <%- include("partials/footer") %>
 
